@@ -12,7 +12,7 @@ public class MainScreen extends JFrame {
     }
 
     private void initUI() {
-        setTitle("IBA Hostel Manage");
+        setTitle("IBA Hostel Mana");
         setSize(900, 660);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Center the window on the screen
