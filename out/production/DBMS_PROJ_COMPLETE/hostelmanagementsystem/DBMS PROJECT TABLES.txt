@@ -1,0 +1,56 @@
+ "CREATE TABLE Hostel (
+    hostel_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    number_of_rooms INT NOT NULL
+);
+CREATE TABLE Admin (
+    admin_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    hostel_id INT,
+    FOREIGN KEY (hostel_id) REFERENCES Hostel(hostel_id)
+);
+show tables;
+drop table weeklymenu;
+-- Create Students table with address
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    room_number INT NOT NULL,
+    hostel_id INT,
+    FOREIGN KEY (hostel_id) REFERENCES Hostel(hostel_id)
+);
+CREATE TABLE Menu (
+    menu_id INT PRIMARY KEY AUTO_INCREMENT,
+    day VARCHAR(50) NOT NULL, -- Add the 'day' column
+    item VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    hostel_id INT,
+    FOREIGN KEY (hostel_id) REFERENCES Hostel(hostel_id)
+);
+
+CREATE TABLE Room (
+    room_number INT PRIMARY KEY,
+    hostel_id INT,
+    type VARCHAR(50),
+    capacity INT,
+    FOREIGN KEY (hostel_id) REFERENCES Hostel(hostel_id)
+);
+CREATE TABLE Staff (
+    staff_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    position VARCHAR(100),
+    hostel_id INT,
+    FOREIGN KEY (hostel_id) REFERENCES Hostel(hostel_id)
+);"
+
+CREATE TABLE student_records (
+    record_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    name VARCHAR(255),
+    action VARCHAR(50),
+    record_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
