@@ -21,7 +21,7 @@ public class DataBase {
 
     private final String DATABASE_URL = "jdbc:mysql://localhost:3306/hostelmanagementsystem";
     private final String user = "root";
-    private final String pass = "Inter=79%";
+    private final String pass = "pass";
 
     public int Update_Query(String query) throws SQLException, ClassNotFoundException {
         Connection connection = getConnection();
