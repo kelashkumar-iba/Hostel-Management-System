@@ -82,7 +82,7 @@ public class MainScreen extends JFrame {
         add(footerPanel, BorderLayout.SOUTH);
 
         JLabel footerLabel = new JLabel("<html><p><span style='font-weight: bold; color: yellow;'>Developers:</span> " +
-                "<span style='color: yellow;'>Zeeshan Hyd</span>, " +
+                "<span style='color: yellow;'>Zeeshan Hyde</span>, " +
                 "<span style='color: yellow;'>Kelash Kumar</span>, " +
                 "<span style='color: yellow;'>Bheesham Kumar</span><br>" +
                 "<span style='font-weight: bold;'>Address:</span> Akhuwat Nagar Society, Sukkur, Sindh, Pakistan.<br>" +
