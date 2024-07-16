@@ -39,3 +39,20 @@ Here are some screenshots of the project:
 ![Page 4](https://github.com/kelashkumar-iba/Hostel-Management-System/blob/main/page4.jpg)
 ![Page 5](https://github.com/kelashkumar-iba/Hostel-Management-System/blob/main/page5.jpg)
 
+
+## Contributing
+
+We welcome contributions to enhance the Hostel Management System. If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. For major changes, please discuss them in an issue first to ensure they align with the project's goals.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact:
+
+Kelash Kumar  
+Email: [kelash.iba22@gmail.com](mailto:kelash.iba22@gmail.com)
+
+
